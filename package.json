@@ -1,0 +1,31 @@
+{
+  "name": "yue-web-basic",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "Yue.",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "^2.5.3",
+    "yue-db-handler": "^0.2.0",
+    "yue-helper": "0.0.8",
+    "yue-web-app-core": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
+  },
+  "babel": {
+    "plugins": [
+      "transform-decorators-legacy",
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "scripts": {
+    "start": "npm run babel-node",
+    "compile": "./node_modules/.bin/babel src -d dist",
+    "babel-node": "./node_modules/.bin/babel-node ./src/app.js"
+  }
+}
