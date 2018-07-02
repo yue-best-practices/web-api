@@ -14,4 +14,10 @@ module.exports = {
         dir:'./src/service'
     },
     globalMiddlewareConf: './src/global_middlewares',  //全局中间键路径配置
+
+    wsServiceConf:{
+        host:'http://127.0.0.1',
+        port:'8080'
+    }
+
 };

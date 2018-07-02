@@ -5,13 +5,16 @@ const appConf=require('../configs/app.config')
 const dbConf=require('../configs/db.config');
 const DBHandler=require('yue-db-handler');
 const helper=require('yue-helper');
+const WebSocketHandler = require('../plugins/WebSocketHandler');
 module.exports = () => {
 
+    WebSocketHandler.instance.config(appConf.wsServiceConf);
     DBHandler.instance.config(dbConf);
     return async(ctx, next) => {
         ctx.$configs=appConf;
         ctx.$dbHandler=DBHandler.instance;
         ctx.$helper=helper;
+        ctx.$webSocketHandler=WebSocketHandler.instance;
         await next();
 
     }

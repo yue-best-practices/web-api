@@ -9,6 +9,7 @@
     "log4js": "^2.5.3",
     "yue-db-handler": "^0.2.0",
     "yue-helper": "0.0.8",
+    "yue-http-util": "^1.0.2",
     "yue-web-app-core": "0.0.2"
   },
   "devDependencies": {
