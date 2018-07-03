@@ -3,9 +3,9 @@
  */
 const appConf=require('../configs/app.config')
 const dbConf=require('../configs/db.config');
-const DBHandler=require('yue-db-handler');
+const DBHandler=require('grpc-node-db-handler');
 const helper=require('yue-helper');
-const WebSocketHandler = require('../plugins/WebSocketHandler');
+const WebSocketHandler = require('grpc-node-ws-handler');
 module.exports = () => {
 
     WebSocketHandler.instance.config(appConf.wsServiceConf);
