@@ -6,7 +6,7 @@
   "author": "Yue.",
   "license": "ISC",
   "dependencies": {
-    "grpc-node-db-handler": "0.0.1",
+    "grpc-node-db-handler": "0.0.3",
     "grpc-node-ws-handler": "0.0.1",
     "log4js": "^2.5.3",
     "yue-helper": "0.0.8",
